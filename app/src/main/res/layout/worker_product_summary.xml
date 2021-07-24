@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/item_worker_details"
+            style="@style/BlackFontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="start"
+            android:paddingStart="32dp"
+            android:text="Pies"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/item_quantity_details"
+            style="@style/BlackFontBold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:paddingEnd="32dp"
+            android:text="46"
+            android:textSize="20sp" />
+    </LinearLayout>
+</layout>

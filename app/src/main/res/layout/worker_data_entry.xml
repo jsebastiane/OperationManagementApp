@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/colorGrey"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/entry_date"
+            style="@style/BlackFontBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="05/06/20"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/entry_item"
+            style="@style/BlackFontBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Cargas"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/entry_quantity"
+            style="@style/BlackFontBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="12"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/entry_total"
+            style="@style/BlackFontBold"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Q250"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</layout>

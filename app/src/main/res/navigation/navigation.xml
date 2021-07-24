@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/supervisorHomeFragment">
+
+    <fragment
+        android:id="@+id/supervisorHomeFragment"
+        android:name="saymobile.company.operationsmanagementapp.view.superhome.SupervisorHomeFragment"
+        android:label="fragment_supervisor_home"
+        tools:layout="@layout/fragment_supervisor_home" >
+        <action
+            android:id="@+id/action_supervisorHomeFragment_to_employeeDetailFragment"
+            app:destination="@id/employeeDetailFragment" />
+        <action
+            android:id="@+id/action_supervisorHomeFragment_to_addWorkerFragment"
+            app:destination="@id/addWorkerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeDetailFragment"
+        android:name="saymobile.company.operationsmanagementapp.view.workerdetails.EmployeeDetailFragment"
+        android:label="fragment_employee_detail"
+        tools:layout="@layout/fragment_employee_detail" >
+        <action
+            android:id="@+id/action_employeeDetailFragment_to_supervisorHomeFragment"
+            app:destination="@id/supervisorHomeFragment" />
+        <argument
+            android:name="workerId"
+            android:defaultValue="0"
+            app:argType="string"/>
+        <argument
+            android:name="workerName"
+            android:defaultValue="0"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_employeeDetailFragment_to_addEntryFragment"
+            app:destination="@id/addEntryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEntryFragment"
+        android:name="saymobile.company.operationsmanagementapp.view.addentry.AddEntryFragment"
+        android:label="fragment_add_entry"
+        tools:layout="@layout/fragment_add_entry" >
+
+        <argument
+            android:name="workerIdEntry"
+            android:defaultValue="0"
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addWorkerFragment"
+        android:name="saymobile.company.operationsmanagementapp.view.addWorker.AddWorkerFragment"
+        android:label="fragment_add_worker"
+        tools:layout="@layout/fragment_add_worker" />
+</navigation>
