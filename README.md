@@ -5,4 +5,8 @@
 
 <p align="center">
   <img src="https://github.com/jsebastiane/OperationManagementApp/blob/master/login.png" width="250" title="hover text">
+  <img src="https://github.com/jsebastiane/OperationManagementApp/blob/master/add_worker.png" width="250" title="hover text">
+
 </p>
+
+
